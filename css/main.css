@@ -1,0 +1,322 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+/**************************** GLOBAL ******************************/
+a {
+	text-decoration: none;
+	color: #fff;
+}
+ul {
+	list-style: none;
+}
+
+.container {
+	padding: 0 10%;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/******************************** HEADER *****************************/
+
+header#top-show {
+	background: rgba(25, 25, 26, 0.3) url("../images/skydiving1.jpg") no-repeat
+		center center;
+	background-blend-mode: overlay;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+.content {
+	color: black;
+	float: left;
+	margin-top: 35vh;
+}
+
+.content h1 {
+	font-size: 70px;
+	margin-bottom: 20px;
+	text-align: unset;
+	padding: 10px;
+	background: white;
+}
+
+.content p {
+	font-size: 20px;
+}
+
+/********************************** NAVBAR ***************************/
+nav {
+	background: #e67e22;
+	position: sticky;
+	top: 0;
+	z-index: 99999;
+}
+nav .container {
+	display: flow-root;
+	height: 70px;
+	line-height: 70px;
+}
+nav .container a {
+	color: white;
+}
+
+.container .logo {
+	float: left;
+	font-size: 20px;
+	text-align: center;
+}
+.container .navigation {
+	float: right;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.container .navigation .nav-links {
+	text-align: center;
+	display: inline-block;
+	width: 120px;
+}
+
+.container .navigation .nav-links a:hover {
+	font-weight: bold;
+	transition: 0.2s ease;
+	color: #1f1d1c;
+}
+
+/***************************** WHAT IS SKYDIVING ********************************/
+
+section#what-is-skydiving {
+	background-color: #ecf0f1;
+	display: flow-root;
+	padding: 70px 0;
+}
+
+#what-is-skydiving .container {
+	text-align: center;
+}
+
+#what-is-skydiving .container h1 {
+	margin-bottom: 24px;
+}
+
+#what-is-skydiving .container p {
+	line-height: 2;
+}
+
+#what-is-skydiving .container a {
+	display: inline-block;
+	width: 175px;
+	padding: 12px 0;
+	background: #e67e22;
+	margin-top: 25px;
+	color: #fff;
+	border: 1px solid transparent;
+	border-radius: 3px;
+}
+#what-is-skydiving .container a:hover {
+	background: transparent;
+	color: #1f1d1c;
+	border: 1px solid #1f1d1c;
+	transition: 0.2s ease;
+}
+
+/**************************** ACTIVITIES OFFERED **************************/
+section#activities-offered {
+	padding: 70px 0;
+}
+
+section#activities-offered .container h1 {
+	margin-bottom: 24px;
+}
+
+section#activities-offered .activities-cards {
+	display: flow-root;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+section#activities-offered .activities-cards li {
+	width: 31%;
+	float: left;
+	height: 400px;
+	margin: 1.1666%;
+	position: relative;
+	text-align: center;
+	border-radius: 10px;
+}
+
+section#activities-offered .activities-cards li h2 {
+	top: 50%;
+	left: 50%;
+	font-size: 24px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+section#activities-offered .activities-cards li {
+	color: #fff;
+	background-size: cover;
+	background-blend-mode: overlay;
+	transition: 250ms ease-in;
+}
+
+section#activities-offered .activities-cards li:hover {
+	box-shadow: 0 0 25px #1f1d1c;
+	transform: scale(1.02, 1.02);
+	z-index: 9999;
+}
+
+section#activities-offered .activities-cards li:nth-of-type(1) {
+	background: rgba(0, 0, 0, 0.6) url(../images/paraglider.jpg) center no-repeat;
+}
+
+section#activities-offered .activities-cards li:nth-of-type(2) {
+	background: rgba(0, 0, 0, 0.6) url(../images/Skydive.jpg) center no-repeat;
+}
+section#activities-offered .activities-cards li:nth-of-type(3) {
+	background: rgba(0, 0, 0, 0.6) url(../images/bungee.jpg) center no-repeat;
+}
+
+/************************************* BOOKING ***********************************/
+section#booking {
+	padding: 70px 0px;
+	background: #ecf0f1;
+}
+section#booking h1 {
+	margin-bottom: 24px;
+}
+section#booking .ticket-form {
+	width: 350px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+section#booking .ticket-form label {
+	width: 130px;
+	padding: 12px 0;
+	display: inline-block;
+}
+
+section#booking .ticket-form input {
+	width: 215px;
+	padding: 7px;
+	border: 1px solid transparent;
+	display: inline-block;
+}
+section#booking .ticket-form input:focus::placeholder {
+	color: transparent;
+}
+
+section#booking .ticket-form input[type="submit"] {
+	width: 350px;
+	color: #fff;
+	display: block;
+	font-size: 1rem;
+	margin-top: 15px;
+	padding: 12px 5px;
+	background: #e67e22;
+	border: 1px solid transparent;
+}
+section#booking .ticket-form input[type="submit"]:hover {
+	background: rgb(230, 118, 20);
+}
+
+/****************** FOOTER *******************/
+footer {
+	background: #e67e22;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 14px;
+}
+footer p {
+	color: #fff;
+	margin-bottom: 10px;
+}
+footer p:nth-of-type(2) a {
+	display: inline-block;
+	margin: 0 10px;
+	color: rgba(25, 25, 26, 0.836);
+}
+
+/********************** MEDIA QUERIES *****************/
+
+@media (max-width: 900px) {
+	section#activities-offered .activities-cards li {
+		height: 250px;
+		text-align: center;
+	}
+	section#activities-offered .activities-cards li h2 {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	header#top-show {
+		height: 100vh;
+	}
+
+	.content {
+		margin-top: 250px;
+	}
+
+	section#activities-offered .activities-cards li {
+		float: none;
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	section#activities-offered .activities-cards li h2 {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 636px) {
+	.content {
+		margin-top: 100px;
+	}
+	nav .container {
+		display: flow-root;
+		padding: 0;
+		height: auto;
+		line-height: normal;
+	}
+	.container .logo {
+		float: none;
+		margin: 10px 0;
+	}
+	.container .navigation {
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.container .navigation .nav-links {
+		padding: 7px 20px;
+		font-size: 13px;
+		width: auto;
+	}
+	.content h1 {
+		font-size: 60px;
+	}
+	.content p {
+		font-size: 18px;
+	}
+
+	section#booking .ticket-form {
+		width: auto;
+	}
+
+	section#booking .ticket-form input[type="submit"] {
+		width: auto;
+		margin-top: 15px;
+		padding: 7px 15px;
+	}
+}
